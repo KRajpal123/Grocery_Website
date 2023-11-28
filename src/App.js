@@ -1,9 +1,13 @@
-import React from 'react'
+import { Grid } from "@mui/material";
+import React from "react";
+import Navbar from "./components/Navbar/Navbar";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <Grid>
+      <Navbar />
+    </Grid>
+  );
+};
 
-export default App
+export default App;
