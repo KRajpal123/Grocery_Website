@@ -1,0 +1,15 @@
+:root {
+  primary-color: #071c1f;
+  primary-color-2: #041113;
+  primary-color-3: #133236;
+  secondary-color: #80b500;
+  secondary-color: #e53e29;
+  secondary-color-2: #699403;
+  secondary-color-3: #a2da1c;
+  heading-color: #071c1f;
+  paragraph-color: #071c1f;
+  heading-font: "Rajdhani", sans-serif;
+  body-font: "Open Sans", sans-serif;
+  color-1: #8cb2b2;
+  --gradient-color-1: linear-gradient(90deg, rgba(242,139,194,1) 0%, rgba(216,177,242,1) 50%);
+}
