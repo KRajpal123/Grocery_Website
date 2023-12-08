@@ -1,13 +1,13 @@
-import React from 'react'
-import SimpleSlider from './Slider'
-
-
+import React from "react";
+import SimpleSlider from "./Slider";
+import Adds from "./adds/Adds";
 const Home = () => {
   return (
-   <>
-   <SimpleSlider/>
-   </>
-  )
-}
+    <>
+      <SimpleSlider />
+      <Adds/>
+    </>
+  );
+};
 
-export default Home
+export default Home;
