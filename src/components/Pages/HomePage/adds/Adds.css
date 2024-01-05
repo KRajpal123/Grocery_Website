@@ -1,0 +1,17 @@
+.h2{
+font-family: 'Times New Roman', Times, serif;
+}
+.p1{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 3px;
+}
+.h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#img-prev{
+    display: flex;
+    justify-content:end;
+}
+.p2{
+    font-family: cursive;
+}
