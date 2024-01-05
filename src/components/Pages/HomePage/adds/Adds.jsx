@@ -8,7 +8,7 @@ const Adds = () => {
   return (
     <Container>
       <Grid container mt={5} mb={5} spacing={2}>
-        <Grid item xs={6} sx={{ backgroundColor: "#f0f4f7" }}>
+        <Grid item xs={12} sm={12} lg={6} xl={6} sx={{ backgroundColor: "#f0f4f7" }}>
           <Grid container p={5}>
             <Grid item xs={12}>
               <h2 className="h2">Green lemon &</h2>
@@ -32,7 +32,7 @@ const Adds = () => {
             </Grid>
           </Grid>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} sm={12} lg={6} xl={6}>
           <Grid container>
             <Grid item xs={12} backgroundColor="#f0f4f7">
               <Grid container spacing={5} p={5}>

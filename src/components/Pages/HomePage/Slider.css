@@ -37,9 +37,22 @@
   }
   
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:600px) {
     .container{
         display: flex;
         flex-direction: column;
     }
+    .image{
+        margin-top: 10px;
+    }
 }
+@media screen and (max-width:900px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .image{
+        margin-top: 20px;
+    }
+}
+
