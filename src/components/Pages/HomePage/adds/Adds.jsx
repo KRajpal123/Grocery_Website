@@ -6,7 +6,7 @@ import "./Adds.css";
 
 const Adds = () => {
   return (
-    <Container>
+    <Container maxWidth="xl">
       <Grid container mt={5} mb={5} spacing={2}>
         <Grid item xs={12} sm={12} lg={6} xl={6} sx={{ backgroundColor: "#f0f4f7" }}>
           <Grid container p={5}>
