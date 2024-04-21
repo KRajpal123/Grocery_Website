@@ -1,6 +1,8 @@
 import axios from "axios";
 
 const getProductsAPI = "https://fakestoreapi.com/products";
+// const getProductsAPI = "https://dummyjson.com/products";
+
 export const getProductsDetails = async () => {
   try {
     const productResp = await axios.get(getProductsAPI);

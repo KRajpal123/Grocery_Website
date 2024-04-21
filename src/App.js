@@ -14,7 +14,7 @@ const App = () => {
       <Grid container>
         <Navbar />
       </Grid>
-      <Grid container>
+      <Grid container marginTop={"25px"} pt={5}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
