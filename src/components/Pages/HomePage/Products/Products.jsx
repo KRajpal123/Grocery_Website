@@ -165,9 +165,6 @@ const Products = () => {
                </Grid>
               ))
             }
-            {
-              products.map((val) => val.id)
-            }
           </Grid>
         </Box>
       </Container>

@@ -45,7 +45,7 @@ export default class SimpleSlider extends Component {
               </div>
               <div className="image">
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT22p_1uCnnEPX0lcsB5NINRtbxaAmuMTfbJw&usqp=CAU"
+                  src="https://cdn.mos.cms.futurecdn.net/ttRcAKkAuabG9JWzvahtiA.jpg"
                   alt=""
                 />
               </div>
@@ -55,7 +55,7 @@ export default class SimpleSlider extends Component {
             <div className="container">
               <div className="image">
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT22p_1uCnnEPX0lcsB5NINRtbxaAmuMTfbJw&usqp=CAU"
+                  src="https://i0.wp.com/greebleagro.com/wp-content/uploads/2019/03/online-vegetables-in-gurgaon-1024x563.jpg?fit=1024%2C563&ssl=1"
                   alt=""
                 />
               </div>
