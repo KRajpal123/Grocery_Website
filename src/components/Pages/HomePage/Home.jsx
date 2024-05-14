@@ -3,6 +3,8 @@ import SimpleSlider from "./Slider";
 import Adds from "./adds/Adds";
 import Products from "./Products/Products";
 import { Grid } from "@mui/material";
+
+
 const Home = () => {
   return (
     <>
