@@ -62,22 +62,22 @@ const Products = () => {
 
   // Filter products based on the selected tab
   const filteredProducts = Array.isArray(products)
-  ? products.filter((product) => {
-    switch (value) {
-      case "1":
-      case "2":
-        return product.category === "jewelery"; // Assuming 'FOOD & DRINKS' is the category for value "1" and "2"
-      case "3":
-        return product.category === "mens";
-      case "4":
-        return product.category === "electronics";
-      case "5":
-        return product.category === "womens";
-      default:
-        return false;
-    }
-  }) : [];
-  
+    ? products.filter((product) => {
+      switch (value) {
+        case "1":
+        case "2":
+          return product.category === "jewelery"; // Assuming 'FOOD & DRINKS' is the category for value "1" and "2"
+        case "3":
+          return product.category === "mens";
+        case "4":
+          return product.category === "electronics";
+        case "5":
+          return product.category === "womens";
+        default:
+          return false;
+      }
+    }) : [];
+
 
   return (
     <>
@@ -160,9 +160,9 @@ const Products = () => {
           <Grid container spacing={3} mt={4}>
             {
               filteredProducts.map((p) => (
-               <Grid item lg={3} sm={6} md={4} xs={12}>
-                 <ProductCard key={p.id} product={p} />
-               </Grid>
+                <Grid item lg={3} sm={6} md={4} xs={12} key={p.id}>
+                  <ProductCard product={p} />
+                </Grid>
               ))
             }
           </Grid>
