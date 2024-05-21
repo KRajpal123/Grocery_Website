@@ -1,6 +1,8 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
 import CountDownTimer from "./CountDownTimer";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import SecondaryButton from "../../../buttons/SecondaryButton";
 
 const Deals = () => {
   return (
@@ -28,6 +30,11 @@ const Deals = () => {
           <Typography variant="h3">Combo Package</Typography>
           <div>
             <CountDownTimer />
+          </div>
+          <div style={{marginTop:"20px"}}>
+          <SecondaryButton >
+                Shop Now <ArrowForwardIcon />
+            </SecondaryButton>
           </div>
         </Grid>
       </Grid>

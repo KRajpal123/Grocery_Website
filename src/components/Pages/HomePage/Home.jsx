@@ -4,6 +4,7 @@ import Adds from "./adds/Adds";
 import Products from "./Products/Products";
 import { Grid } from "@mui/material";
 import Deals from "./HotDeals/Deals";
+import Featured from "./FeaturedProducts/Featured";
 
 const Home = () => {
   return (
@@ -19,6 +20,9 @@ const Home = () => {
       </Grid>
       <Grid container>
         <Deals />
+      </Grid>
+      <Grid container>
+        <Featured />
       </Grid>
     </>
   );

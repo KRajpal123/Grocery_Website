@@ -3,12 +3,11 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea, colors } from "@mui/material";
+import { CardActionArea} from "@mui/material";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 import PrimaryButton from "../../../buttons/PrimaryButton";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import { green } from "@mui/material/colors";
 
 
 
