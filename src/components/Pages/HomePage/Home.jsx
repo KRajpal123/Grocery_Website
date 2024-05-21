@@ -5,6 +5,7 @@ import Products from "./Products/Products";
 import { Grid } from "@mui/material";
 import Deals from "./HotDeals/Deals";
 import Featured from "./FeaturedProducts/Featured";
+import Video from "./Video/Video";
 
 const Home = () => {
   return (
@@ -23,6 +24,9 @@ const Home = () => {
       </Grid>
       <Grid container>
         <Featured />
+      </Grid>
+      <Grid container>
+        <Video />
       </Grid>
     </>
   );
