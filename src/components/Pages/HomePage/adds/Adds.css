@@ -10,7 +10,7 @@ font-family: 'Times New Roman', Times, serif;
 }
 #img-prev{
     display: flex;
-    justify-content:end;
+    justify-content: flex-end;
 }
 .p2{
     font-family: cursive;
