@@ -24,6 +24,9 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Grid>
+      <Grid container>
+        {"footer"}
+      </Grid>
     </>
   );
 };
