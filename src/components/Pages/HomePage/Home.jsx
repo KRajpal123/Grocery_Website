@@ -7,6 +7,7 @@ import Deals from "./HotDeals/Deals";
 import Featured from "./FeaturedProducts/Featured";
 import Video from "./Video/Video";
 import Feedbacks from "./Feedback/Feedbacks";
+import Blog from "./Blog/Blog";
 
 const Home = () => {
   return (
@@ -31,6 +32,9 @@ const Home = () => {
       </Grid>
       <Grid container>
         <Feedbacks />
+      </Grid>
+      <Grid container>
+        <Blog />
       </Grid>
     </>
   );

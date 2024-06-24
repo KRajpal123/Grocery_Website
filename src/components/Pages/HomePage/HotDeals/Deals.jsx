@@ -8,10 +8,10 @@ const Deals = () => {
   return (
     <>
       <Grid container mt={5} sx={{ backgroundColor: "#f9f4d9" }}>
-        <Grid item sm={6} xs={12} x={{ display: "flex", alignItems: "center" }}>
+        <Grid item sm={6} xs={12} x={{ display: "flex", alignItems: "center",}}>
           <img
             id="honeyJar"
-            src="https://goodmockups.com/wp-content/uploads/2020/01/Free-Honey-Jar-Mockup-PSD-Set-2.jpg"
+            src="https://5.imimg.com/data5/NB/WX/ZC/SELLER-36209985/500-gm-honey-pet-jar.jpg"
             alt="honey"
           />
         </Grid>

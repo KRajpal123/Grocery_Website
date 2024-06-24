@@ -8,13 +8,13 @@ import Typography from "@mui/material/Typography";
 export default function FeedCard() {
   return (
     <>
-      <Card sx={{ display: "flex",width:"30vw", ml:5 }}>
+      <Card sx={{ display: "flex",width:"30vw",margin:"15px",cursor:"pointer" }}>
         <Box>
           <CardMedia
           component={"img"}
           image="https://i.ytimg.com/vi/72-q3bYGUMk/maxresdefault.jpg"
           alt="greenary in nature"
-          sx={{width:'250px'}}
+          sx={{width:'250px',height:"100%"}}
            />
         </Box>
         <Box>
