@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 
 const Featured = () => {
   const products = useSelector((state) => state.products.productsList);
+console.log("prod",products);
 
   return (
     <Container maxWidth="xl">
@@ -16,7 +17,7 @@ const Featured = () => {
           {products.map((p) => {
             return (
               <>
-                <Grid item lg={3} sm={6} md={4} xs={12} key={p}>
+                <Grid item lg={3} sm={6} md={4} xs={12} key={p.id}>
                   <ProductCard product ={p}/>
                 </Grid> 
               </>
