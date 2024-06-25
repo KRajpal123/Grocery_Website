@@ -9,19 +9,27 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import { CardMedia } from "@mui/material";
+import { CardMedia, TextField } from "@mui/material";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 import PrimaryButton from "../buttons/PrimaryButton";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import { Link } from "react-router-dom";
+import { styled } from "@mui/system";
 
 const pages = ["Home", "About", "Shop", "Blog", "Contact"];
 const settings = ["Sign in", "Register", "My Account", "Whishlist"];
 
+const TransitionBox = styled(Box)(({ theme, visible }) => ({
+  width: visible ? "25ch" : "0",
+  overflow: "hidden",
+  transition: "width 0.5s ease-in-out",
+}));
+
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const [showTextField, setShowTextField] = React.useState(false);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -38,6 +46,9 @@ function ResponsiveAppBar() {
     setAnchorElUser(null);
   };
 
+  const handleSearchClick = () => {
+    setShowTextField(!showTextField);
+  };
   return (
     <AppBar position="fixed">
       <Container
@@ -177,11 +188,19 @@ function ResponsiveAppBar() {
               </Link>
             ))}
           </Box>
-
-          <Box sx={{ marginRight: "5px" }}>
-            <PrimaryButton size="large" aria-label="search">
-              <SearchIcon />
-            </PrimaryButton>
+          <Box display="flex" alignItems="center">
+            <TransitionBox visible={showTextField}>
+              <TextField label="search here..." variant="outlined" color="success" />
+            </TransitionBox>
+            <Box sx={{ marginRight: "5px" }}>
+              <PrimaryButton
+                size="large"
+                aria-label="search"
+                onClick={handleSearchClick}
+              >
+                <SearchIcon />
+              </PrimaryButton>
+            </Box>
           </Box>
 
           {/* user  */}
