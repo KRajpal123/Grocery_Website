@@ -9,7 +9,6 @@ import {
   ListItem,
   Box,
   FormControl,
-  Input,
   InputAdornment,
   OutlinedInput,
   InputLabel,
@@ -25,6 +24,9 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import SendIcon from "@mui/icons-material/Send";
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import EmailIcon from '@mui/icons-material/Email';
 import { styled } from "@mui/material/styles";
 const style = {
   display: "flex",
@@ -211,6 +213,40 @@ const Footer = () => {
                 pure<span style={{ color: "green" }}>Pantry</span>
               </Typography>
             </div>
+            <Typography component={"div"} variant="body" sx={{margin:"0px 10px"}}>
+              Welcome to PurePantry. We have fresh food and more. Order online,
+              get it delivered to your door. It's easy and convenient. Start
+              shopping now!
+            </Typography>
+            <Grid container alignItems={'center'} justifyContent={'center'} sx={{margin:"10px"}}>
+              <Grid item xs={2}>
+                <LocationOnIcon />
+              </Grid>
+              <Grid item xs={10}>
+                Hyderabad, Telangana.
+              </Grid>
+              <Grid item xs={2}>
+                <LocalPhoneIcon />
+              </Grid>
+              <Grid item xs={10}>
+                +91 9988998899
+              </Grid>
+              <Grid item xs={2}>
+                <EmailIcon />
+              </Grid>
+              <Grid item xs={10}>
+                purepantry@info.com
+              </Grid>
+            </Grid>
+            <Grid container margin={1.2}>
+              {
+                socialMedia.map((s) => (
+                  <Grid item xs={3} key={s.id}>
+                    {s.icon}
+                  </Grid>
+                ))
+              }
+            </Grid>
           </Grid>
           <Grid item xs={2}>
             <Typography variant="h6"> Company</Typography>
