@@ -16,6 +16,7 @@ import PrimaryButton from "../buttons/PrimaryButton";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import { Link } from "react-router-dom";
 import { styled } from "@mui/system";
+import CartSummery from "../Pages/CartPage/CartSummery";
 
 const pages = ["Home", "About", "Shop", "Blog", "Contact"];
 const settings = ["Sign in", "Register", "My Account", "Whishlist"];
@@ -30,6 +31,7 @@ function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const [showTextField, setShowTextField] = React.useState(false);
+  const [open, setOpen] = React.useState(false);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -49,6 +51,11 @@ function ResponsiveAppBar() {
   const handleSearchClick = () => {
     setShowTextField(!showTextField);
   };
+
+  const toggleDrawer = (newOpen) => () => {
+    setOpen(newOpen);
+  };
+
   return (
     <AppBar position="fixed">
       <Container
@@ -235,11 +242,12 @@ function ResponsiveAppBar() {
           </Box>
 
           <Box sx={{ marginLeft: "5px" }}>
-            <PrimaryButton>
+            <PrimaryButton onClick={toggleDrawer(true)}>
               <ShoppingCartOutlinedIcon />
             </PrimaryButton>
           </Box>
         </Toolbar>
+        <CartSummery open={open} toggleDrawer={toggleDrawer} />
       </Container>
     </AppBar>
   );
