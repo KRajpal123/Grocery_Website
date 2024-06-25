@@ -45,7 +45,7 @@ export default function ProductCard(props) {
           </Typography> */}
         </CardContent>
       </CardActionArea>
-      <CardContent>
+      <CardContent sx={{display:"flex",justifyContent:"space-between",backgroundColor:"#f0f4f7"}}>
         <PrimaryButton className={isMouseHover ? "centered" : "hidden"}>
           <RemoveRedEyeIcon />
         </PrimaryButton>

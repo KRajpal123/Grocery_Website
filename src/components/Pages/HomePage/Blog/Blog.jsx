@@ -1,10 +1,11 @@
 import React from "react";
-import { Grid, Typography } from "@mui/material";
+import { Container, Grid, Typography } from "@mui/material";
 import Blogcard from "./Blogcard";
 
 const Blog = () => {
   return (
-    <Grid container mt={5}>
+   <Container maxWidth="xl">
+     <Grid container mt={5}>
       <Grid item xs={12}>
         <Typography variant="h3" align="center">
           Latest Blogs
@@ -14,6 +15,7 @@ const Blog = () => {
         <Blogcard />
       </Grid>
     </Grid>
+   </Container>
   );
 };
 

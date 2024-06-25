@@ -7,6 +7,7 @@ import About from "./components/Pages/AboutPage/About"
 import Shop from "./components/Pages/ShopPage/Shop"
 import Blog from "./components/Pages/BlogPage/Blog"
 import Contact from "./components/Pages/ContactPage/Contact"
+import Footer from "./components/Pages/Footer/Footer";
 
 const App = () => {
   return (
@@ -25,7 +26,7 @@ const App = () => {
         </Routes>
       </Grid>
       <Grid container>
-        {"footer"}
+       <Footer />
       </Grid>
     </>
   );
