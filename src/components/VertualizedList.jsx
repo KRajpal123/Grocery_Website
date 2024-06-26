@@ -1,19 +1,32 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
 import { FixedSizeList } from "react-window";
+import { Grid, Typography } from "@mui/material";
 
 function renderRow(props) {
   const { index, style } = props;
 
   return (
-    <ListItem style={style} key={index} component="div" disablePadding>
-      <ListItemButton>
-        <ListItemText primary={`Item ${index + 1}`} />
-      </ListItemButton>
-    </ListItem>
+    <Grid
+      container
+      sx={{
+        borderBottom: "1px solid black",
+        width: "90%",
+        margin: "auto",
+        height: "100px",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <Grid item xs={3}>
+        <img src="" alt="cart-items" />
+        <Typography variant="body2">remove</Typography>
+      </Grid>
+      <Grid item xs={9}>
+        <Typography variant="body1">Title</Typography>
+        <Typography variant="body2">qty x price</Typography>
+      </Grid>
+    </Grid>
   );
 }
 
