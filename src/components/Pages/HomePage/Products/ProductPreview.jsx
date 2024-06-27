@@ -17,6 +17,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 const socialMedia = [
   {
@@ -92,7 +93,7 @@ export default function ProductPreview(props) {
                 <img
                   src="https://4.imimg.com/data4/EX/IX/MY-26971534/alphonso-mango1.jpg"
                   alt="product-preview-pic"
-                  style={{ maxWidth: "100%",mixBlendMode:"multiply"}}
+                  style={{ maxWidth: "100%", mixBlendMode: "multiply" }}
                 />
               </Grid>
               <Grid item xs={7}>
@@ -184,9 +185,14 @@ export default function ProductPreview(props) {
           onClose={handleClose}
           aria-labelledby="customized-dialog-title"
           open={open}
+          sx={{
+            "& .MuiDialog-paper": {
+              width: "50vw",
+            },
+          }}
         >
           <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title">
-            Modal title
+            PRODUCT ADDED TO CART
           </DialogTitle>
           <IconButton
             aria-label="close"
@@ -200,7 +206,63 @@ export default function ProductPreview(props) {
           >
             <CloseIcon />
           </IconButton>
-          <DialogContent dividers>cart</DialogContent>
+          <DialogContent dividers>
+            <Grid container spacing={2}>
+              <Grid
+                item
+                xs={3}
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <div style={{ backgroundColor: "#f0f4f7" }}>
+                  <img
+                    src="https://4.imimg.com/data4/EX/IX/MY-26971534/alphonso-mango1.jpg"
+                    alt="product-preview-pic"
+                    style={{
+                      maxWidth: "100%",
+                      mixBlendMode: "multiply",
+                      height: "90px",
+                    }}
+                  />
+                </div>
+              </Grid>
+              <Grid item xs={8} width={"90%"} margin={"auto"}>
+                <Typography variant="h6">Cart Title</Typography>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    margin: "10px 0px",
+                  }}
+                >
+                  <CheckCircleIcon />{" "}
+                  <span>Successfully added to your cart</span>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    padding: "20px 0px",
+                    justifyContent: "space-around",
+                  }}
+                >
+                  <SecondaryButton>View Cart</SecondaryButton>
+                  <SecondaryButton>Checkout</SecondaryButton>
+                </div>
+              </Grid>
+              <Grid item xs={12}>
+                <Divider component={"div"} />
+                <div style={{ width: "80%", margin: "auto",padding:"10px" }}>
+                  <Typography variant="body2" gutterBottom textAlign={'center'}>
+                    we want to give you <strong>10% discount</strong> for your
+                    first Order, use (LovePurePantry) discount code at checkout
+                  </Typography>
+                </div>
+              </Grid>
+            </Grid>
+          </DialogContent>
         </BootstrapDialog>
       )}
 
@@ -209,6 +271,11 @@ export default function ProductPreview(props) {
           onClose={handleClose}
           aria-labelledby="customized-dialog-title"
           open={open}
+          sx={{
+            "& .MuiDialog-paper": {
+              width: "50vw",
+            },
+          }}
         >
           <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title">
             Modal title
