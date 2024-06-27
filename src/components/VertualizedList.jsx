@@ -4,6 +4,7 @@ import { FixedSizeList } from "react-window";
 import { Grid, Typography } from "@mui/material";
 
 function renderRow(props) {
+  // eslint-disable-next-line 
   const { index, style } = props;
 
   return (

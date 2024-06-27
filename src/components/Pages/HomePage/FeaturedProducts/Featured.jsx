@@ -16,11 +16,11 @@ console.log("prod",products);
         <Grid container spacing={3} mt={4}>
           {products.map((p) => {
             return (
-              <>
+              <React.Fragment key={p.id}>
                 <Grid item lg={3} sm={6} md={4} xs={12} key={p.id}>
                   <ProductCard product ={p}/>
                 </Grid> 
-              </>
+              </React.Fragment>
             );
           })}
         </Grid>

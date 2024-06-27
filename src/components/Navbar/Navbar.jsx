@@ -21,7 +21,7 @@ import CartSummery from "../Pages/CartPage/CartSummery";
 const pages = ["Home", "About", "Shop", "Blog", "Contact"];
 const settings = ["Sign in", "Register", "My Account", "Whishlist"];
 
-const TransitionBox = styled(Box)(({ theme, visible }) => ({
+const TransitionBox = styled(Box)(({visible }) => ({
   width: visible ? "25ch" : "0",
   overflow: "hidden",
   transition: "width 0.5s ease-in-out",
