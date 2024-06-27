@@ -254,8 +254,8 @@ export default function ProductPreview(props) {
               </Grid>
               <Grid item xs={12}>
                 <Divider component={"div"} />
-                <div style={{ width: "80%", margin: "auto",padding:"10px" }}>
-                  <Typography variant="body2" gutterBottom textAlign={'center'}>
+                <div style={{ width: "80%", margin: "auto", padding: "10px" }}>
+                  <Typography variant="body2" gutterBottom textAlign={"center"}>
                     we want to give you <strong>10% discount</strong> for your
                     first Order, use (LovePurePantry) discount code at checkout
                   </Typography>
@@ -273,12 +273,12 @@ export default function ProductPreview(props) {
           open={open}
           sx={{
             "& .MuiDialog-paper": {
-              width: "50vw",
+              width: "30vw",
             },
           }}
         >
           <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title">
-            Modal title
+            Wishlist
           </DialogTitle>
           <IconButton
             aria-label="close"
@@ -292,7 +292,45 @@ export default function ProductPreview(props) {
           >
             <CloseIcon />
           </IconButton>
-          <DialogContent dividers>favorite</DialogContent>
+          <DialogContent dividers>
+            <Grid container spacing={2} padding={1}>
+              <Grid
+                item
+                xs={3}
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <div style={{ backgroundColor: "#f0f4f7" }}>
+                  <img
+                    src="https://4.imimg.com/data4/EX/IX/MY-26971534/alphonso-mango1.jpg"
+                    alt="product-preview-pic"
+                    style={{
+                      maxWidth: "100%",
+                      mixBlendMode: "multiply",
+                      height: "90px",
+                    }}
+                  />
+                </div>
+              </Grid>
+              <Grid item xs={8} width={"90%"} margin={"auto"}>
+                <Typography variant="h6">Title</Typography>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    margin: "10px 0px",
+                  }}
+                >
+                  <CheckCircleIcon />{" "}
+                  <span>Successfully added to your cart</span>
+                </div>
+                <SecondaryButton>View Wishlist</SecondaryButton>
+              </Grid>
+            </Grid>
+          </DialogContent>
         </BootstrapDialog>
       )}
     </React.Fragment>
