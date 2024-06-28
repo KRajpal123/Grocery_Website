@@ -21,7 +21,7 @@ import CartSummery from "../Pages/CartPage/CartSummery";
 const pages = ["Home", "About", "Shop", "Blog", "Contact"];
 const settings = ["Sign in", "Register", "My Account", "Whishlist"];
 
-const TransitionBox = styled(Box)(({visible }) => ({
+const TransitionBox = styled(Box)(({ visible }) => ({
   width: visible ? "25ch" : "0",
   overflow: "hidden",
   transition: "width 0.5s ease-in-out",
@@ -124,9 +124,24 @@ function ResponsiveAppBar() {
                 display: { xs: "block", md: "none" },
               }}
             >
+              {/*---------------------------------- mobile screens ----------- */}
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Link
+                    to={`/${page}`}
+                    style={{ textDecoration: "none" }}
+                    key={page}
+                  >
+                    <Typography
+                      textAlign="center"
+                      sx={{
+                        color: "black",
+                        ":hover": { color: "#80b500" },
+                      }}
+                    >
+                      {page}
+                    </Typography>
+                  </Link>
                 </MenuItem>
               ))}
             </Menu>
@@ -162,7 +177,7 @@ function ResponsiveAppBar() {
               textDecoration: "none",
             }}
           >
-            Grocery
+            purePantry
           </Typography>
 
           <Box
@@ -197,7 +212,11 @@ function ResponsiveAppBar() {
           </Box>
           <Box display="flex" alignItems="center">
             <TransitionBox visible={showTextField}>
-              <TextField label="search here..." variant="outlined" color="success" />
+              <TextField
+                label="search here..."
+                variant="outlined"
+                color="success"
+              />
             </TransitionBox>
             <Box sx={{ marginRight: "5px" }}>
               <PrimaryButton
@@ -235,7 +254,21 @@ function ResponsiveAppBar() {
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+                  <Link
+                    to={`/${setting}`}
+                    style={{ textDecoration: "none" }}
+                    key={setting}
+                  >
+                    <Typography
+                      textAlign="center"
+                      sx={{
+                        color: "black",
+                        ":hover": { color: "#80b500" },
+                      }}
+                    >
+                      {setting}
+                    </Typography>
+                  </Link>
                 </MenuItem>
               ))}
             </Menu>
