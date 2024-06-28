@@ -1,9 +1,17 @@
-import React from 'react'
+import { Grid } from "@mui/material";
+import React from "react";
+import Hero from "./AboutHero/Hero";
 
 const About = () => {
   return (
-    <div>About</div>
-  )
-}
+    <React.Fragment>
+      <Grid container>
+        <Grid item xs={12}>
+          <Hero />
+        </Grid>
+      </Grid>
+    </React.Fragment>
+  );
+};
 
-export default About
+export default About;
