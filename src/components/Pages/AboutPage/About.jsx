@@ -5,6 +5,7 @@ import AboutAdds from "./AboutHero/AboutAdds";
 import AboutFeatures from "./AboutHero/AboutFeatures";
 import TeamMembers from "./AboutHero/TeamMembers";
 import Feedbacks from "../HomePage/Feedback/Feedbacks";
+import Faqs from "./FAQ/Faqs";
 
 const About = () => {
   return (
@@ -24,6 +25,9 @@ const About = () => {
         </Grid>
         <Grid item xs={12} sx={{ backgroundColor: "#f9f4d9" }}>
           <Feedbacks />
+        </Grid>
+        <Grid item xs={12}>
+          <Faqs />
         </Grid>
       </Grid>
     </React.Fragment>
