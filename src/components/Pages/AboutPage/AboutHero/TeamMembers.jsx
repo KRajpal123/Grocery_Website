@@ -61,7 +61,10 @@ const socialMedia = [
 const TeamMembers = () => {
   return (
     <Container maxWidth="xl">
-      <Grid container spacing={2} sx={{ margin: "50px 0px" }}>
+      <Typography variant="h2" textAlign={"center"} margin={"20px 0px"} fontWeight={'bold'} fontFamily={'sans-serif'}>
+        Team Member
+      </Typography>
+      <Grid container spacing={2} sx={{ margin: "10px 0px" }}>
         {members.map((m) => (
           <Grid item xs={3} key={m.id}>
             <Card sx={{ maxWidth: 345, textAlign: "center" }}>
@@ -91,6 +94,5 @@ const TeamMembers = () => {
     </Container>
   );
 };
-
 
 export default TeamMembers;
