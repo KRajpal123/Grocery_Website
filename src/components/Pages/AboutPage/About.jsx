@@ -2,6 +2,7 @@ import { Grid } from "@mui/material";
 import React from "react";
 import Hero from "./AboutHero/Hero";
 import AboutAdds from "./AboutHero/AboutAdds";
+import AboutFeatures from "./AboutHero/AboutFeatures";
 
 const About = () => {
   return (
@@ -10,8 +11,11 @@ const About = () => {
         <Grid item xs={12}>
           <Hero />
         </Grid>
-        <Grid xs={12}>
+        <Grid item xs={12}>
           <AboutAdds />
+        </Grid>
+        <Grid item xs={12} sx={{ backgroundColor: "#f9f4d9" }}>
+          <AboutFeatures />
         </Grid>
       </Grid>
     </React.Fragment>

@@ -13,4 +13,5 @@
   color-1: #8cb2b2;
   --gradient-color-1: linear-gradient(90deg, rgba(242,139,194,1) 0%, rgba(216,177,242,1) 50%);
   bgColor:"#e6ecf0";
+  backgroundColor: "#f9f4d9";
 }

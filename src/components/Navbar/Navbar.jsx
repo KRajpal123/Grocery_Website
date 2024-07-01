@@ -7,7 +7,6 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import { CardMedia, TextField } from "@mui/material";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
@@ -30,7 +29,7 @@ const TransitionBox = styled(Box)(({ visible }) => ({
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
-  const [showTextField, setShowTextField] = React.useState(false);
+  const [showTextField, setShowTextField] = React.useState(null);
   const [open, setOpen] = React.useState(false);
 
   const handleOpenNavMenu = (event) => {
@@ -231,11 +230,9 @@ function ResponsiveAppBar() {
 
           {/* user  */}
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="open">
-              <PrimaryButton onClick={handleOpenUserMenu}>
-                <PersonOutlineOutlinedIcon />
-              </PrimaryButton>
-            </Tooltip>
+            <PrimaryButton onClick={handleOpenUserMenu}>
+              <PersonOutlineOutlinedIcon />
+            </PrimaryButton>
             <Menu
               sx={{ mt: "45px" }}
               id="menu-appbar"
