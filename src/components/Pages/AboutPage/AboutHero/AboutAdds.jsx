@@ -69,7 +69,7 @@ const AboutAdds = () => {
                 <br />
                 on trust and is built on community and quality content.
               </Typography>
-              <Typography variant="h6" mt={3}>Jerry Hensom</Typography>
+              <Typography variant="h6" mt={3}>Jenny Hensom</Typography>
               <Typography variant="body2">{"/"}shop director</Typography>
             </Grid>
           </Grid>
