@@ -14,7 +14,7 @@ const About = () => {
     <React.Fragment>
       <Grid container>
         <Grid item xs={12}>
-          <Hero />
+          <Hero name={"About Us"} />
         </Grid>
         <Grid item xs={12}>
           <AboutAdds />
