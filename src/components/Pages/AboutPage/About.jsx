@@ -7,6 +7,7 @@ import TeamMembers from "./AboutHero/TeamMembers";
 import Feedbacks from "../HomePage/Feedback/Feedbacks";
 import Faqs from "./FAQ/Faqs";
 import NewsLetter from "./NewsLetter/NewsLetter";
+import Blog from "../HomePage/Blog/Blog";
 
 const About = () => {
   return (
@@ -24,7 +25,11 @@ const About = () => {
         <Grid item xs={12}>
           <TeamMembers />
         </Grid>
-        <Grid item xs={12} sx={{ backgroundColor: "#f9f4d9",margin:"50px 0px" }}>
+        <Grid
+          item
+          xs={12}
+          sx={{ backgroundColor: "#f9f4d9", margin: "50px 0px" }}
+        >
           <Feedbacks />
         </Grid>
         <Grid item xs={12}>
@@ -32,6 +37,9 @@ const About = () => {
         </Grid>
         <Grid item xs={12}>
           <NewsLetter />
+        </Grid>
+        <Grid item xs={12}>
+          <Blog />
         </Grid>
       </Grid>
     </React.Fragment>
