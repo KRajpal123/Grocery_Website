@@ -1,7 +1,10 @@
 import { Divider, Grid, Typography, Box } from "@mui/material";
 import React from "react";
 
-const Hero = () => {
+const Hero = (props) => {
+
+  const {name} = props;
+
   return (
     <Grid
       container
@@ -29,7 +32,7 @@ const Hero = () => {
         <Typography variant="body1" color={"#a2da1c"}>
           {"//"}WELCOME TO OUR COMPANY
         </Typography>
-        <Typography variant="h4">About Us</Typography>
+        <Typography variant="h4">{name}</Typography>
       </Grid>
       <Grid
         item
@@ -45,7 +48,7 @@ const Hero = () => {
               sx={{ mx: 2, height: 12, bgcolor: "white", alignSelf: "tretch" }}
             />
           </div>
-          <Typography variant="h6" color={'#a2da1c'}>About Us</Typography>
+          <Typography variant="h6" color={'#a2da1c'}>{name}</Typography>
         </Box>
       </Grid>
     </Grid>
