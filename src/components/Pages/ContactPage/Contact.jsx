@@ -5,6 +5,7 @@ import ContactDetails from "./ContactDetails";
 import DraftsIcon from "@mui/icons-material/Drafts";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import PlaceIcon from "@mui/icons-material/Place";
+import ContactForm from "./ContactForm";
 
 const contactDetails = [
   {
@@ -46,6 +47,9 @@ const Contact = () => {
             ))}
           </Grid>
         </Container>
+      </Grid>
+      <Grid item xs={12}>
+        <ContactForm />
       </Grid>
     </Grid>
   );

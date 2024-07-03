@@ -1,19 +1,60 @@
 import * as React from "react";
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
+import InputAdornment from "@mui/material/InputAdornment";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import IconButton from "@mui/material/IconButton";
+import { styled } from "@mui/system";
+
+const StyledAutocomplete = styled(Autocomplete)`
+  .MuiAutocomplete-endAdornment {
+    display: flex;
+    align-items: center;
+    .MuiAutocomplete-popupIndicator {
+      display: none;
+    }
+  }
+`;
 
 export default function AutoCompleteHelper() {
+  const [open, setOpen] = React.useState(false);
+
+  const handleToggle = () => {
+    setOpen((prevOpen) => !prevOpen);
+  };
+
   return (
-    <Autocomplete
+    <StyledAutocomplete
       disablePortal
       id="combo-box-demo"
       options={top100Films}
-      sx={{ width: "20vw" }}
-      renderInput={(params) => <TextField {...params} label="Default Sorting" />}
+      open={open}
+      onOpen={() => setOpen(true)}
+      onClose={() => setOpen(false)}
+      sx={{ width: "100%" }}
+      disableClearable
+      renderInput={(params) => (
+        <TextField
+          {...params}
+          label="Default Sorting"
+          InputProps={{
+            ...params.InputProps,
+            sx: { paddingRight: "14px !important" },
+            endAdornment: (
+              <>
+                <InputAdornment position="end">
+                  <IconButton onClick={handleToggle} edge="end">
+                    <ArrowDownwardIcon style={{ color: "#699403" }} />
+                  </IconButton>
+                </InputAdornment>
+              </>
+            ),
+          }}
+        />
+      )}
     />
   );
 }
-
 // Top 100 films as rated by IMDb users. http://www.imdb.com/chart/top
 const top100Films = [
   { label: "The Shawshank Redemption", year: 1994 },
