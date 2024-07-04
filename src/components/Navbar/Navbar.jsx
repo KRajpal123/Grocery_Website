@@ -18,7 +18,7 @@ import { styled } from "@mui/system";
 import CartSummery from "../Pages/CartPage/CartSummery";
 
 const pages = ["Home", "About", "Shop", "Blog", "Contact"];
-const settings = ["Login", "Register", "My Account", "Wishlist"];
+const settings = ["Login", "Register", "My-Account", "Wishlist"];
 
 const TransitionBox = styled(Box)(({ visible }) => ({
   width: visible ? "25ch" : "0",
