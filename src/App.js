@@ -29,7 +29,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
-          <Route path="/myaccount" element={<AccountPage />} />
+          <Route path="/my-account" element={<AccountPage />} />
           <Route path="/wishlist" element={<WishListPage />} />
         </Routes>
       </Grid>
