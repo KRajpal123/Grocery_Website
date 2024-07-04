@@ -66,7 +66,13 @@ export default function VerticalTabs() {
         <Tab label="Item Seven" {...a11yProps(6)} />
       </Tabs>
       <TabPanel value={value} index={0}>
-        Item One
+       <div>
+        <h6>Hello <b>UserName</b></h6>
+        <p>Logout</p>
+       </div>
+       <div>
+        <p>From your account dashboard you can view your recent orders, manage your shipping and billing addresses, and edit your password and account details.</p>
+       </div>
       </TabPanel>
       <TabPanel value={value} index={1}>
         Item Two
