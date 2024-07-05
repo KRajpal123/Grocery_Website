@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import BasicTable from "../../Table";
 import Address from "./Address";
+import UserDetails from "./UserDetails";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -97,7 +98,7 @@ export default function VerticalTabs() {
         <Address />
       </TabPanel>
       <TabPanel value={value} index={4}>
-        Item Five
+        <UserDetails />
       </TabPanel>
       <TabPanel value={value} index={5}>
         Item Six
