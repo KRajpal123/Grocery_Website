@@ -1,10 +1,10 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import BasicTable from '../../Table';
+import * as React from "react";
+import PropTypes from "prop-types";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import BasicTable from "../../Table";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -35,7 +35,7 @@ TabPanel.propTypes = {
 function a11yProps(index) {
   return {
     id: `vertical-tab-${index}`,
-    'aria-controls': `vertical-tabpanel-${index}`,
+    "aria-controls": `vertical-tabpanel-${index}`,
   };
 }
 
@@ -48,7 +48,12 @@ export default function VerticalTabs() {
 
   return (
     <Box
-      sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: 224 }}
+      sx={{
+        flexGrow: 1,
+        bgcolor: "background.paper",
+        display: "flex",
+        height: 224,
+      }}
     >
       <Tabs
         orientation="vertical"
@@ -56,7 +61,7 @@ export default function VerticalTabs() {
         value={value}
         onChange={handleChange}
         aria-label="Vertical tabs example"
-        sx={{ borderRight: 1, borderColor: 'divider' }}
+        sx={{ borderRight: 1, borderColor: "divider" }}
       >
         <Tab label="Item One" {...a11yProps(0)} />
         <Tab label="Item Two" {...a11yProps(1)} />
@@ -67,19 +72,25 @@ export default function VerticalTabs() {
         <Tab label="Item Seven" {...a11yProps(6)} />
       </Tabs>
       <TabPanel value={value} index={0}>
-       <div>
-        <h6>Hello <b>UserName</b></h6>
-        <p>Logout</p>
-       </div>
-       <div>
-        <p>From your account dashboard you can view your recent orders, manage your shipping and billing addresses, and edit your password and account details.</p>
-       </div>
+        <div>
+          <h6>
+            Hello <b>UserName</b>
+          </h6>
+          <p>Logout</p>
+        </div>
+        <div>
+          <p>
+            From your account dashboard you can view your recent orders, manage
+            your shipping and billing addresses, and edit your password and
+            account details.
+          </p>
+        </div>
       </TabPanel>
       <TabPanel value={value} index={1}>
         <BasicTable />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+        <BasicTable />
       </TabPanel>
       <TabPanel value={value} index={3}>
         Item Four
