@@ -1,8 +1,11 @@
+import { Grid } from '@mui/material'
 import React from 'react'
 
 const WishListPage = () => {
   return (
-    <div>WishListPage</div>
+    <Grid container>
+
+    </Grid>
   )
 }
 
