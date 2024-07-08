@@ -6,7 +6,7 @@ const WishListPage = () => {
   return (
     <Grid container>
       <Grid item xs={12}>
-        <Hero />
+        <Hero name="Whishlist"/>
       </Grid>
       <Grid item xs={12}></Grid>
     </Grid>
