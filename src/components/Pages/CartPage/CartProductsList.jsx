@@ -12,19 +12,19 @@ const CartProductsList = () => {
                       <CloseIcon />
                   </IconButton>
               </Grid>
-              <Grid item>
+              <Grid item xs={2}>
                   <img src="" alt="item-pic" />
               </Grid>
-              <Grid item>
+              <Grid item xs={2}>
                   <Typography variant='h6'>Title</Typography>
               </Grid>
-              <Grid item>
+              <Grid item xs={2}>
                   <Typography variant='h6'>Price</Typography>
               </Grid>
-              <Grid item>
+              <Grid item xs={2}>
                   <Typography variant='body2'>Availability</Typography>
               </Grid>
-              <Grid item>
+              <Grid item xs={2}>
                   <SecondaryButton>
                       Add To Cart
                   </SecondaryButton>
