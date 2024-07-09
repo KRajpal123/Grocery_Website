@@ -5,6 +5,12 @@ const CartProductsList = () => {
   return (
       <Container>
           <Grid container>
+              <Grid item></Grid>
+              <Grid item></Grid>
+              <Grid item></Grid>
+              <Grid item></Grid>
+              <Grid item></Grid>
+              <Grid item></Grid>
           </Grid>  
     </Container>
   )
