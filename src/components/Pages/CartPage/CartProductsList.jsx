@@ -6,7 +6,7 @@ import SecondaryButton from '../../buttons/SecondaryButton';
 const CartProductsList = () => {
   return (
       <Container>
-          <Grid container>
+          <Grid container sx={{borderBottom:"1px solid black",mt:5,alignItems:"center"}}>
               <Grid item>
                   <IconButton>
                       <CloseIcon />
@@ -24,7 +24,7 @@ const CartProductsList = () => {
               <Grid item xs={2}>
                   <Typography variant='body2'>Availability</Typography>
               </Grid>
-              <Grid item xs={2}>
+              <Grid item xs={2} mb={5}>
                   <SecondaryButton>
                       Add To Cart
                   </SecondaryButton>
