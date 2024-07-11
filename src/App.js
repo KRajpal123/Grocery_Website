@@ -12,6 +12,7 @@ import LoginPage from "./components/Pages/Login/LoginPage";
 import RegisterPage from "./components/Pages/Register/RegisterPage";
 import AccountPage from "./components/Pages/Account/AccountPage";
 import WishListPage from "./components/Pages/WishList/WishListPage";
+import CheckOut from "./components/Pages/CheckoutPage/CheckOut";
 
 const App = () => {
   return (
@@ -30,7 +31,8 @@ const App = () => {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/my-account" element={<AccountPage />} />
-          <Route path="/wishlist" element={<WishListPage />} />
+          <Route path="/wishlist" element={<WishListPage />} />  
+          <Route path="/checkout" element={<CheckOut />} />  
         </Routes>
       </Grid>
       <Grid container>
