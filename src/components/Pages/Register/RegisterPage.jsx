@@ -30,7 +30,13 @@ const RegisterPage = () => {
           <Grid container spacing={3} sx={{ margin: "auto" }}>
             <Grid item xs={10}>
               <FormControl sx={{ width: "100%" }} variant="outlined">
-                <InputLabel>Email*</InputLabel>
+                <InputLabel>First Name*</InputLabel>
+                <OutlinedInput />
+              </FormControl>
+            </Grid>
+            <Grid item xs={10}>
+              <FormControl sx={{ width: "100%" }} variant="outlined">
+                <InputLabel>Last Name</InputLabel>
                 <OutlinedInput />
               </FormControl>
             </Grid>
@@ -42,19 +48,13 @@ const RegisterPage = () => {
             </Grid>
             <Grid item xs={10}>
               <FormControl sx={{ width: "100%" }} variant="outlined">
-                <InputLabel>Email*</InputLabel>
+                <InputLabel>Password*</InputLabel>
                 <OutlinedInput />
               </FormControl>
             </Grid>
             <Grid item xs={10}>
               <FormControl sx={{ width: "100%" }} variant="outlined">
-                <InputLabel>Email*</InputLabel>
-                <OutlinedInput />
-              </FormControl>
-            </Grid>
-            <Grid item xs={10}>
-              <FormControl sx={{ width: "100%" }} variant="outlined">
-                <InputLabel>Email*</InputLabel>
+                <InputLabel>Confirm Password*</InputLabel>
                 <OutlinedInput />
               </FormControl>
             </Grid>
