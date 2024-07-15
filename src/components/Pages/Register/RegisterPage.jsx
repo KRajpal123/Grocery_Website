@@ -81,7 +81,7 @@ const RegisterPage = () => {
               <Typography variant="body1">
                 By creating an account, you agree to our:
               </Typography>
-              <div>
+              <div style={{display:"flex",justifyContent:"space-between",margin:"30px 0px"}}>
                 <a href="/register">TERMS & CONDITIONS</a>
                 <Divider orientation="vertical" />
                 <a href="/register"> PRIVACY & POLICY</a>
