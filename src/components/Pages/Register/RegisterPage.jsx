@@ -86,7 +86,9 @@ const RegisterPage = () => {
                 <Divider orientation="vertical" />
                 <a href="/register"> PRIVACY & POLICY</a>
               </div>
+              <div style={{textAlign:"center"}}>
               <a href="/login">ALREADY HAVE AN ACCOUNT?</a>
+             </div>
             </Grid>
           </Grid>
         </Grid>
