@@ -14,6 +14,21 @@ import AccountPage from "./components/Pages/Account/AccountPage";
 import WishListPage from "./components/Pages/WishList/WishListPage";
 import CheckOut from "./components/Pages/CheckoutPage/CheckOut";
 
+
+const routes = [
+  { path: "/", element: <Home /> },
+  { path: "/home", element: <Home /> },
+  { path: "/about", element: <About /> },
+  { path: "/shop", element: <Shop /> },
+  { path: "/blog", element: <Blog /> },
+  { path: "/contact", element: <Contact /> },
+  { path: "/login", element: <LoginPage /> },
+  { path: "/register", element: <RegisterPage /> },
+  { path: "/my-account", element: <AccountPage /> },
+  { path: "/wishlist", element: <WishListPage /> },
+  { path: "/checkout", element: <CheckOut /> }
+];
+
 const App = () => {
   return (
     <>
@@ -22,17 +37,9 @@ const App = () => {
       </Grid>
       <Grid container marginTop={"25px"} pt={5}>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/shop" element={<Shop />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/register" element={<RegisterPage />} />
-          <Route path="/my-account" element={<AccountPage />} />
-          <Route path="/wishlist" element={<WishListPage />} />  
-          <Route path="/checkout" element={<CheckOut />} />  
+        {routes.map((route, index) => (
+          <Route key={index} path={route.path} element={route.element} />
+        ))}
         </Routes>
       </Grid>
       <Grid container>
