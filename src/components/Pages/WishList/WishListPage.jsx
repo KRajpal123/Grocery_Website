@@ -1,7 +1,7 @@
 import { Grid } from '@mui/material'
 import React from 'react'
 import Hero from '../AboutPage/AboutHero/Hero'
-import CartProductsList from '../CartPage/CartProductsList'
+// import CartProductsList from '../CartPage/CartProductsList'
 
 const WishListPage = () => {
   return (
